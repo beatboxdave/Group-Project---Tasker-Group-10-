@@ -1,8 +1,9 @@
 html{
-	background: -webkit-linear-gradient(#87CEFA, #1E90FF); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#87CEFA, #1E90FF); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#87CEFA, #1E90FF); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#87CEFA, #1E90FF); /* Standard syntax */
+	background: -webkit-linear-gradient(#66b2ff, #1E90FF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#66b2ff, #1E90FF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#66b2ff, #1E90FF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#66b2ff, #1E90FF); /* Standard syntax */
+	background-size: 3000px 3000px;
 	min-height:363px;
 	min-width:150px;
 }
@@ -39,12 +40,29 @@ td{
 	margin-top:5%;
 }
 
+.task-dat-table{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	margin-top:5%;
+}
+
+.task-dat-table td{
+	background-color:99ccff;
+	text-align:center;
+}
+
 table .heading{
 	font-weight:bold;
 }
 
 .team-mem-table td{
-	background-color:87ceeb;
+	background-color:99ccff;
+	text-align:center;
+}
+
+.team-mem-table tr :hover{
+	background-color:white;
 	text-align:center;
 }
 
@@ -73,14 +91,14 @@ table .heading{
 }
 
 .contMain{
-	width: 720px;
+	width: 1100px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
 	font-family:Gulim;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	height:300px;
+	height:500px;
 }
 
 .contMainApple{
@@ -148,7 +166,6 @@ table .heading{
 
 
 .btn {
-  margin-top:4%;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -228,7 +245,7 @@ table .heading{
 	-khtml-user-select: none;
 	 text-decoration: none;
 	   outline:0 !important;
-	   height:25px;
+	   height:34px;
 }
 
 .passField{
@@ -259,22 +276,21 @@ table .heading{
 .TabbedPanelsTabGroup {
 	margin: 0px;
 	padding: 0px;
-	width:16%;
+	width:80%;
 	float:left;
-	height:100%;
 }
 
 .TabbedPanelsTab {
-	position: relative;
-	border-top: 1px solid #460069;
-	width: 100%;
+	border-left: 1px solid #460069;
+	float:left;
+	width: 10%;
 	font: bold 0.7em sans-serif;
 	list-style: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	cursor: pointer;
 	outline:0 !important;
-	height:15%;
+	height:10%;
 }
 
 .TabbedPanelsTab h2{
@@ -500,9 +516,8 @@ font-size:18px;
 }
 
 .TabbedPanelsContentGroup {
-	width:80%;
+	width:100%;
 	float:left;
-	border-left: 1px solid #460069;
 	border-top: 1px solid #460069;
 	height:100%;
 }
