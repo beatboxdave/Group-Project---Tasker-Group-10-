@@ -1,5 +1,4 @@
 <?php
-error_reporting();
 session_start();
 include('dbconfig.php');
 
@@ -71,6 +70,7 @@ if(isset($_REQUEST['editTask'])){
 			alert("Record updated!");
 		</script>
 		<?php
+		header("location:index.php");
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
@@ -305,7 +305,7 @@ $sql = "INSERT INTO task_data (title, teamMember, status, startDate, expEndDate,
 										echo"<td>Task Description</td>";
 									echo"</tr>";
 									while($row = mysqli_fetch_assoc($result)) {
-										echo "<form method='post' onSubmit='return validateTasksEdit()' action='index.php' name='updateTask'>";
+										echo "<form method='post' action='index.php' name='updateTask'>";
 										echo '<tr>';
 											echo '<input type="hidden" name="id" value="'.$row["ID"].'">';
 											echo '<td class="title">'.$row["title"].'</td>';

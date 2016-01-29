@@ -57,21 +57,13 @@ function validateTasks(){
 	return false;
 	}
 	var c = document.forms["details"]["startDate"].value;
-	if (c != /^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/){
-	alert("Please change the date you entered to match the format provided.");
-	return false;
-	}
-	var v = document.forms["details"]["endDate"].value;
-	if (v != /^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/){
-	alert("Please change the date you entered to match the format provided.");
-	return false;
-	}
+
 }
 
 function validateTasksEdit(){
 	var regex = /\d/g;
 	var v = document.forms["updateTask"]["endDate"].value;
-	if (v != /^(\d{4})(\/|-)(\d{1,2})(\/|-)(\d{1,2})$/){
+	if (v != /^\d{4}-\d{1,2}-\d{1,2}$/){
 	alert("Please change the date you entered to match the format provided.");
 	return false;
 	}
